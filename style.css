@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header, section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+#profile {
+   flex-direction: column;
+   align-items: center;
+}
+
+#profile p {
+    margin: 20px 0;
+}
+
+.section-left {
+    justify-content: space-between;
+}
+
+.section-right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/* #about-me {
+    
+}
+
+#my-work {
+    
+} */
+
+#my-work ul li {
+    display: inline;
+}
+
+#education, #contact {
+    flex-wrap: wrap;
+}
+
+#education-body, #contact-body {
+    justify-content: flex-end;
+}
