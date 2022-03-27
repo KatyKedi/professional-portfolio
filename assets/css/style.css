@@ -11,6 +11,16 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+#profile img {
+    max-width: 80%;
+    max-height: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: var(--primary-color);
 }
