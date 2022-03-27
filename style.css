@@ -4,7 +4,7 @@
     text-decoration: none;
 }
 
-header, section {
+.row {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -25,53 +25,52 @@ header nav ul li {
     margin: 20px 0;
 }
 
-.section-left {
+#about-me {
     justify-content: space-between;
 }
 
-.section-right {
+#my-work {
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-/* #about-me {
-    
+#about-me p , #my-work p {
+    text-align: left;
+    padding: 10px;
 }
-
-#my-work {
-    
-} */
 
 #my-work ul li {
     display: inline;
 }
 
-#education, #contact {
+#education-body, #contact-body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+#education-contact {
+    display: flex;
     flex-wrap: wrap;
 }
 
-#education-body, #contact-body {
-    justify-content: flex-end;
-}
-
 /* MEDIA QUERY FOR LARGER SCREENS*/
-@media screen and (min-width: 980px) {
-    section {
-        margin: 0 260px;
+@media screen and (min-width: 979px) {
+    .row {
+        margin: 0 180px;
     }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    section {
-        margin: 0 100px;
+    .row {
+        margin: 0 80px;
     }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    section {
+    .row {
         margin: 0 10px;
     }
 }
-
