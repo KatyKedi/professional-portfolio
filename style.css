@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -17,6 +17,24 @@ body {
 
 h1, h2 {
     color:var(--primary-color);
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 3em;
+}
+
+#profile p {
+    font-size: 1em;
+}
+
+p, li {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
 }
 
 .row {
@@ -69,6 +87,10 @@ header nav ul li :hover {
 
 #my-work ul li {
     display: inline;
+}
+
+#my-work div {
+    font-size: 1.5em;
 }
 
 .project-link :hover {
