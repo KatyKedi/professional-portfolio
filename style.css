@@ -1,7 +1,22 @@
+:root {
+    --primary-color: darkmagenta;
+    --secondary-color: lightgreen;
+    --tertiary-color: skyblue;
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1, h2 {
+    color:var(--primary-color);
 }
 
 .row {
@@ -9,11 +24,24 @@
     justify-content: center;
     padding: 20px;
     text-align: center;
+    border: 20px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--tertiary-color) 0px 30px 60px -12px inset, var(--tertiary-color) 0px 18px 36px -18px inset;
+}
+
+.row:hover {
+    background-color: var(--tertiary-color);
 }
 
 header nav ul li {
     display: inline;
-    padding: 20px;
+    padding: 0 20px;
+}
+
+header nav ul li :hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 #profile {
@@ -43,6 +71,11 @@ header nav ul li {
     display: inline;
 }
 
+.project-link :hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 #education-body, #contact-body {
     display: flex;
     flex-direction: column;
@@ -52,6 +85,11 @@ header nav ul li {
 #education-contact {
     display: flex;
     flex-wrap: wrap;
+}
+
+#github :hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* MEDIA QUERY FOR LARGER SCREENS*/
