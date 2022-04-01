@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css"></style>
     <title>Katy Vincent's Portfolio</title>
 </head>
 <body>
-    <div>
+    <div  id="nav">
         <header>
-            <nav id="nav" class="row">
+            <nav class="row">
                 <!--Unordered list element-->
                 <ul>
                     <!--List item element-->
@@ -35,7 +38,6 @@
         <section id="profile" class="row">
             <h1>KATY VINCENT</h1>
             <p>Computational Linguist</p>
-            <img src="./assets/images/profile.jpg" alt="Katy Vincent profile picture">
         </section>
         <section id="about-me" class="row">
             <h2>About Me</h2>
@@ -50,29 +52,41 @@
             <h2>My Work</h2>
             <ul>
                 <li>
-                    <div class="project-link"><a href="https://katykedi.github.io/code-quiz/">Code Quiz</a></div>
-                    <img src="./assets/images/code-quiz.png" alt="Code quiz preview">
-                    <p>
-                        This application allows the user to take a multiple choice quiz on introductory coding concepts.
-                        The user's score is recorded, and they are given the option to save their score to the high scores list to compare with others.
-                    </p>
+                    <div class="project-div">
+                        <img src="./assets/images/code-quiz.png" alt="Code quiz preview">
+                        <div class="project-explanation">
+                            <div class="project-link"><a href="https://katykedi.github.io/code-quiz/">Code Quiz</a></div>
+                            <p>
+                                This application allows the user to take a multiple choice quiz on introductory coding concepts.
+                                The user's score is recorded, and they are given the option to save their score to the high scores list to compare with others.
+                            </p>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <div class="project-link"><a href="https://katykedi.github.io/workday-scheduler/">Workday Scheduler</a></div>
-                    <img src="./assets/images/workday-scheduler.png" alt="Workday scheduler preview">
-                    <p>
-                        This application allows the user to organize their daily work schedule by editing tasks for every time block. 
-                        The time blocks are color coded to let the user know when time blocks have already past, are current, or are in the future. 
-                        The application updates on an interval to keep the user aware of upcoming deadlines.
-                    </p>
+                    <div class="project-div">
+                        <img src="./assets/images/workday-scheduler.png" alt="Workday scheduler preview">
+                        <div class="project-explanation">
+                            <div class="project-link"><a href="https://katykedi.github.io/workday-scheduler/">Workday Scheduler</a></div>
+                            <p>
+                                This application allows the user to organize their daily work schedule by editing tasks for every time block. 
+                                The time blocks are color coded to let the user know when time blocks have already past, are current, or are in the future. 
+                                The application updates on an interval to keep the user aware of upcoming deadlines.
+                            </p>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <div class="project-link"><a href="https://katykedi.github.io/team-profile-generator/">Team Profile Generator</a></div>
-                    <img src="./assets/images/team-profile-generator.png" alt="Team profile generator preview">
-                    <p>
-                        This application allows the user to create a team profile by entering data for their team manager, engineers, and interns at the company. 
-                        After entering the desired information, the data is inserted into an HTML template and a webpage displaying team profiles is created.
-                    </p>
+                    <div class="project-div">
+                        <img src="./assets/images/team-profile-generator.png" alt="Team profile generator preview">
+                        <div class="project-explanation">
+                            <div class="project-link"><a href="https://katykedi.github.io/team-profile-generator/">Team Profile Generator</a></div>
+                            <p>
+                                This application allows the user to create a team profile by entering data for their team manager, engineers, and interns at the company. 
+                                After entering the desired information, the data is inserted into an HTML template and a webpage displaying team profiles is created.
+                            </p>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
